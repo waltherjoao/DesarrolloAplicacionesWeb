@@ -76,7 +76,7 @@ const formulario = document.querySelector(".formulario");
 formulario.addEventListener('submit', function(evento){
     evento.preventDefault();
     const { nombre, email, mensaje} = datos; //Destructuración
-    if(nombre === '' && email === '' && mensaje === ''){
+    if(nombre == '' || email == '' || mensaje == ''){
         mostrarMensaje('Todos los campos son obligatorios');
         return;
     } 
